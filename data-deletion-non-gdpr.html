@@ -1,0 +1,15 @@
+<h2>Data Deletion Instructions for <span class="appName">APP NAME</span></h2>
+<p><span class="appName">APP NAME</span> is not currently available in GDPR regions. Thus, data will be collected and retained as outlined in the privacy policy. <span class="appName">APP NAME</span> will be made GDPR-compliant with ways to delete your data
+    upon global launch of <span class="appName">APP NAME</span>.<br /><br />Thank you for your understanding.<br /><br />You can remove the app from your device locally by navigating to Settings &gt; Apps &gt; <span class="appName">APP NAME</span> &gt;
+    Uninstall.
+</p>
+
+<script>
+    const params = new URLSearchParams(document.location.search);
+    const appName = params.get("appName");
+
+    var appNameElements = document.getElementsByClassName("appName");
+    for (let i = 0; i < appNameElements.length; i++) {
+        appNameElements[i].innerHTML = appName;
+    }
+</script>
